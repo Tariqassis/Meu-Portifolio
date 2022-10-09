@@ -34,3 +34,7 @@ web site Portifolio TariqDev
 - [CDNJS - Fontawesome](https://cdnjs.com/libraries/font-awesome)
 - [CDNJS - Vanila Tilt](https://cdnjs.com/libraries/vanilla-tilt)
 - [CDNJS - Jquery](https://cdnjs.com/libraries/jquery)
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://tariqassis.github.io/Meu-Portifolio/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tariq-assis/)
