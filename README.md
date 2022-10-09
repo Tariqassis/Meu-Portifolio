@@ -26,3 +26,11 @@ web site Portifolio TariqDev
 ![skills](https://user-images.githubusercontent.com/86030679/194778912-2aff18a2-5ef9-4c8f-add6-0127595d71ac.jpg)
 ![portfolio](https://user-images.githubusercontent.com/86030679/194778911-fa8a16c3-194a-465d-a095-9a67f4d50e1c.jpg)
 ![contato](https://user-images.githubusercontent.com/86030679/194778909-1fc04bea-6823-4418-8a44-c897bed0c788.jpg)
+
+## Documentação
+
+- [Formulario submit](https://formsubmit.co/)
+- [AOS](https://michalsnik.github.io/aos/)
+- [CDNJS - Fontawesome](https://cdnjs.com/libraries/font-awesome)
+- [CDNJS - Vanila Tilt](https://cdnjs.com/libraries/vanilla-tilt)
+- [CDNJS - Jquery](https://cdnjs.com/libraries/jquery)
