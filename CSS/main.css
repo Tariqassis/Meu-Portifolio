@@ -411,7 +411,13 @@ section {
     cursor: pointer;
     padding: 10px;
     transition: .4s ease;
-    background: var(--beje);   
+    
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+     border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .skills .skills-content .box:hover {
@@ -511,6 +517,7 @@ section {
     color: var(--beje-light);
     font-size: 18px;
     font-weight: 800;
+    margin-top: 90px;
 }
 
 .portfolio-content .hover-item .icons {
@@ -567,89 +574,34 @@ section {
     font-size: 20px;
     font-weight: 800;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.contact-content .contact-item {
-    margin: 25px 0;
+
+.icons {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+
 }
 
-.contact-content .contact-info {
-    margin: 20px 0;
-}
-
-.contact-content .left .contact-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contact-content .right {
-    flex: 2.5;
-    margin: 0 10px;
-}
-
-.contact-content .contact-box {
-    margin: 15px 0;
-}
-
-.contact-content .contact-box input,
-.contact-content .contact-box textarea {
-    width: 100%;
-    background: var(--beje);
-    padding: 9px 18px;
-    border-radius: 30px;
-    font-family: inherit;
-    font-weight: inherit;
-    box-shadow: 5px 5px 5px 0px #171310;
-}
-
-.contact-content .contact-form .btn {
-    display: inline-block;
-    font-size: 22px;
-    font-weight: 800;
-    padding: 8px 15px;
-    margin: 5px 0;
-    background-color: var(--blue);
-    border-color: var(--blue);
-    transition: .4s ease;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 0px #171310;
-}
-
-.contact-content .contact-form .btn:hover {
-    background-color: transparent;
-    border-color: var(--black)
-}
 
 .icon .fa-solid {
-    font-size: 18px;
-    
+    font-size: 18px;   
 }
 
 .icons .icon  i {
-    font-size: 25px;
+    font-size: 35px;
     height: 50px;
     width: 50px;
+    margin: 50px;
+    
 }
 
 .icons .icon i:hover {
     color: var(--blue);
     transition: .3s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
