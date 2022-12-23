@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
     --white: #fff;
     --beje: #DECEB4;
@@ -12,7 +15,7 @@
 }
 
 * {
-    font-family: monospace;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +23,7 @@
     border: none;
     resize: none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: none;
     color: var(--black);
 }
 
@@ -122,6 +125,7 @@ body {
     color: var(--white);
     cursor: pointer;
 }
+
 
 .header #menubtn:hover {
     color: var(--blue);
@@ -579,12 +583,11 @@ section {
 
 
 .icons {
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     text-align: center;
 
 }
-
 
 .icon .fa-solid {
     font-size: 18px;   
@@ -645,7 +648,7 @@ section {
 
     .about .left h3 span{
         font-size: 30px;
-        margin-right: 40px;
+        margin-right: 30px;
     }
 
     .about .left h3 {
@@ -697,7 +700,7 @@ section {
     }
 
     .about .about-content {
-        gap: 0px;
+        gap: 1px;
     }
 
     .skills .skills-content .box {
@@ -721,5 +724,15 @@ section {
     .about .right a {
         font-size: 17px;
         padding: 7px 10px;
+    }
+
+    .timeline {
+         margin: 20px 0;
+    }
+
+    .timeline-item {
+        padding-left: 3rem;
+        width: calc(100% - 0px);
+
     }
 }
