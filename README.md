@@ -42,7 +42,7 @@ Disponível no Link: https://tariqassis.github.io/Meu-Portifolio/
 - [CDNJS - Fontawesome](https://cdnjs.com/libraries/font-awesome)
 - [CDNJS - Vanila Tilt](https://cdnjs.com/libraries/vanilla-tilt)
 - [CDNJS - Jquery](https://cdnjs.com/libraries/jquery)
-- [Particles-JS]([https://cdnjs.com/libraries/jquery](https://vincentgarreau.com/particles.js/))
+- [Particles-JS](https://vincentgarreau.com/particles.js/)
 
 
 
