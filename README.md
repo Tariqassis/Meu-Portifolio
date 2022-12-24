@@ -15,7 +15,7 @@ web site Portifolio TariqDev
 
 ## Stack utilizada
 
-**Front-end:** HTML, CSS, JAVASCRIPT (AOS jS, Vanila Tilt)
+**Front-end:** HTML, CSS, JAVASCRIPT (AOS jS, Vanila Tilt, Particles JS)
 
 
 
