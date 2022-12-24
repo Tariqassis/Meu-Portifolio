@@ -1,7 +1,7 @@
 
 # Meu Portifolio
 
-web site Portifolio TariqDev
+Portifolio TariqDev
 
 
 
@@ -9,6 +9,7 @@ web site Portifolio TariqDev
 
 - interação com a imagem do perfil com valina tilt
 - animação de swipers ao descer 
+- interação no botão
 - Responsivo para pc, tablet, celular
 - Multiplataforma
 
@@ -16,6 +17,7 @@ web site Portifolio TariqDev
 ## Stack utilizada
 
 **Front-end:** HTML, CSS, JAVASCRIPT (AOS jS, Vanila Tilt, Particles JS)
+**Bibliotecas:** AOS jS, Vanila Tilt, Particles JS
 
 
 
