@@ -70,6 +70,15 @@ body {
     z-index: 1;
 }
 
+#particles-js {
+    background: var(--beje-light);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+
 .header.active {
     left: 0;
 }
