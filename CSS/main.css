@@ -12,7 +12,15 @@
     --border-bold: 5px solid var(--black);
     --border-light: 3px solid var(--black);
     --border-lighter: 2px solid var(--black);
+    --marquee-width: 80vw;
+    --marquee-height: 20vh;
+        /* --marquee-elements: 12; */
+        /* defined with JavaScript */
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
+
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -476,66 +484,90 @@ section {
     border-bottom: var(--border-bold);
     text-transform: uppercase;
 }
+/*----------MARQUEE rolando pela tela-----------*/
+.marquee {
+    width: 100%;
+    height: var(--marquee-height);
+    background-color: #F5F2ED;
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+}
 
-.skills .skills-content {
+.marquee:before,
+.marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.marquee:before {
+    left: 0;
+    background: linear-gradient(to right, #eee 0%, transparent 100%);
+}
+
+.marquee:after {
+    right: 0;
+    background: linear-gradient(to left, #eee 0%, transparent 100%);
+}
+
+.marquee-content {
+    list-style: none;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-    text-align: center;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
 
-.skills .skills-content .box {
-    width: calc(50% - 40px);
-    margin: 0 10px;
-    border-top: var(--border-light);
-    border-bottom: var(--border-light);
-    text-align: center;
-    cursor: pointer;
-    padding: 10px;
-    transition: .4s ease;
-    
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+    }
 }
 
-.skills .skills-content .box:hover {
-    transform: scale(1.05);
-    box-shadow: 5px 10px 10px 2px #171310;
-}
-
-.skills .skills-content .box:hover h3 {
-    background: var(--blue2);
-    color: #fff;
-}
-
-.skills .skills-content .box i {
-    font-size: 25px;
-    height: 50px;
-    width: 50px;
-    background-color: var(--blue2);
+.marquee-content li {
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 50%;   
-    margin: auto;
-}
- 
-.skills .skills-content .box .fa-brands {
-    color: var(--white);
+    align-items: center;
+    /* text-align: center; */
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height)*3/4);
+    /* 5rem; */
+    white-space: nowrap;
 }
 
-.skills-content .box h3 {
-    font-size: 22px;
-    margin: 10px 0;
-    font-weight: 800;
-    border-radius: 50%;
-    transition: .4s ease;
+.marquee-content li img {
+    width: 100%;
+    /* height: 100%; */
+    border: 2px solid #eee;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    :root {
+        --marquee-width: 100vw;
+        --marquee-height: 16vh;
+        --marquee-elements-displayed: 3;
+    }
+
+    .marquee:before,
+    .marquee:after {
+        width: 5rem;
+    }
 }
 
 /*--------- portifolio ----------*/
