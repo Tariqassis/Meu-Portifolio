@@ -212,6 +212,8 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
 }
 
 
+
+
 (function () {
     // Swipe Content Plugin - by CodyHouse.co
     // https://codyhouse.co/ds/components/info/swipe-content
